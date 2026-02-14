@@ -1,0 +1,101 @@
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+overflow:hidden;
+color:white;
+background:linear-gradient(-45deg,#ff758c,#ff7eb3,#ff4d6d,#ff9a9e);
+background-size:400% 400%;
+animation:gradient 15s ease infinite;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.slide{
+display:none;
+height:100vh;
+padding:60px;
+text-align:center;
+animation:fade 1.2s ease;
+}
+
+.active{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+@keyframes fade{
+from{opacity:0;transform:scale(0.95);}
+to{opacity:1;transform:scale(1);}
+}
+
+h1,h2{
+text-shadow:0 0 20px rgba(255,255,255,0.6);
+}
+
+p{
+max-width:900px;
+line-height:1.7;
+font-size:18px;
+}
+
+img{
+width:70%;
+max-height:60vh;
+border-radius:20px;
+box-shadow:0 25px 50px rgba(0,0,0,0.5);
+margin-bottom:20px;
+}
+
+button{
+padding:12px 28px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff4d6d;
+font-weight:bold;
+cursor:pointer;
+margin-top:20px;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+.heart{
+position:fixed;
+bottom:-20px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+100%{transform:translateY(-100vh);}
+}
+
+.sparkle{
+position:fixed;
+width:6px;
+height:6px;
+background:white;
+border-radius:50%;
+animation:explode 1s ease-out forwards;
+}
+
+@keyframes explode{
+0%{transform:scale(1);opacity:1;}
+100%{transform:scale(15);opacity:0;}
+}
+
+#secret{
+display:none;
+font-size:20px;
+margin-top:20px;
+color:#fff;
+}

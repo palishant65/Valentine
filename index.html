@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Asmita ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+overflow:hidden;
+color:white;
+background:linear-gradient(-45deg,#ff758c,#ff7eb3,#ff4d6d,#ff9a9e);
+background-size:400% 400%;
+animation:gradient 15s ease infinite;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.slide{
+display:none;
+height:100vh;
+padding:60px;
+text-align:center;
+animation:fade 1.2s ease;
+}
+
+.active{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+@keyframes fade{
+from{opacity:0;transform:scale(0.95);}
+to{opacity:1;transform:scale(1);}
+}
+
+h1,h2{
+text-shadow:0 0 20px rgba(255,255,255,0.6);
+}
+
+p{
+max-width:900px;
+line-height:1.7;
+font-size:18px;
+}
+
+img{
+width:40%;
+max-width:350px;
+height:auto;
+border-radius:20px;
+box-shadow:0 25px 50px rgba(0,0,0,0.4);
+margin-bottom:20px;
+}
+
+button{
+padding:12px 28px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff4d6d;
+font-weight:bold;
+cursor:pointer;
+margin-top:20px;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+/* floating hearts */
+.heart{
+position:fixed;
+bottom:-20px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+100%{transform:translateY(-100vh);}
+}
+
+/* sparkle */
+.sparkle{
+position:fixed;
+width:6px;
+height:6px;
+background:white;
+border-radius:50%;
+animation:explode 1s ease-out forwards;
+}
+
+@keyframes explode{
+0%{transform:scale(1);opacity:1;}
+100%{transform:scale(15);opacity:0;}
+}
+
+#secret{
+display:none;
+font-size:20px;
+margin-top:20px;
+color:#fff;
+}
+
+</style>
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mp3">
+</audio>
+
+<div class="slide active">
+<h1>Happy Valentine Asmita ❤️</h1>
+<p>
+This is not just a website.  
+This is every heartbeat, every memory, every silent promise  
+I have kept in my heart since 18 July 2024.  
+Today, I want you to walk through our journey —  
+one slide at a time —  
+and feel how deeply you are loved.
+</p>
+<input type="password" id="password" placeholder="Enter Special Date (18072024)">
+<button onclick="login()">Unlock Our World</button>
+</div>
+
+<div class="slide">
+<h2>For You ❤️</h2>
+<p>
+Since 18 July 2024, my life found a new meaning.  
+You didn’t just enter my life — you transformed it.  
+You brought calm to my chaos, light to my darkness, and warmth to my loneliness.  
+Every morning feels better knowing you exist in my world.  
+Every night feels peaceful because I know you are mine.  
+You are not just my love story — you are my destiny written beautifully.
+</p>
+</div>
+
+<div class="slide">
+<h2>Our Love Story 💌</h2>
+<p>
+It all started on 18 July 2024.  
+What seemed like a simple beginning slowly became the most powerful chapter of my life.  
+From nervous conversations to comfortable silences, from small smiles to deep emotions —  
+every step brought us closer.  
+Our love wasn’t loud, but it was real.  
+It wasn’t perfect, but it was honest.  
+And in that honesty, I found my forever.
+</p>
+</div>
+
+<!-- PHOTO 1 -->
+<div class="slide">
+<img src="photo1.jpg">
+<p>
+This picture reminds me of the moment I realized how lucky I am.  
+Your natural smile, your calm presence, your simple beauty —  
+it all feels magical.  
+Whenever I see this photo, I don’t just see an image —  
+I see my happiness captured in one frame.
+</p>
+</div>
+
+<!-- PHOTO 2 -->
+<div class="slide">
+<img src="photo2.jpg">
+<p>
+This was one of those days when everything felt perfect.  
+The way you stood, the way you smiled —  
+it was effortless and beautiful.  
+You have this rare ability to make ordinary moments feel unforgettable.
+</p>
+</div>
+
+<!-- PHOTO 3 -->
+<div class="slide">
+<img src="photo3.jpg">
+<p>
+Every time I look at this, I feel calm.  
+You don’t even try — yet you glow.  
+You don’t even speak — yet you comfort me.  
+That’s the magic you carry.
+</p>
+</div>
+
+<!-- PHOTO 4 -->
+<div class="slide">
+<img src="photo4.jpg">
+<p>
+This is not just a memory —  
+it’s proof that love can be seen.  
+It’s written in your eyes, in your smile,  
+in the way you stand beside me.
+</p>
+</div>
+
+<!-- PHOTO 5 -->
+<div class="slide">
+<img src="photo5.jpg">
+<p>
+There’s something about this picture that melts my heart.  
+Maybe it’s your innocence, maybe it’s your confidence.  
+Whatever it is — it reminds me that I chose the right person.
+</p>
+</div>
+
+<!-- PHOTO 6 -->
+<div class="slide">
+<img src="photo6.jpg">
+<p>
+This moment feels timeless.  
+It reminds me that love is not about perfection —  
+it’s about presence.  
+And your presence is the most beautiful gift of my life.
+</p>
+</div>
+
+<!-- LOVE LETTER -->
+<div class="slide">
+<h2>Love Letter 💌</h2>
+<p>
+Asmita, loving you has been the most beautiful transformation of my life.  
+Before you, I didn’t understand what it meant to truly care for someone deeply.  
+You taught me patience, softness, and strength.  
+You showed me that love is not about grand gestures,  
+but about consistent presence.  
+You are my safe place, my peace, my home.  
+Every day with you feels like a blessing I never want to lose.  
+I promise to stand by you, grow with you, and build a future filled with warmth, laughter, and endless support.  
+No matter where life takes us, my heart will always choose you.
+</p>
+</div>
+
+<!-- MINI GAME -->
+<div class="slide">
+<h2>Mini Surprise 🎁</h2>
+<button onclick="showSecret()">Click For Secret</button>
+<p id="secret">
+Secret Message:  
+Even if the whole world stands against you,  
+I will stand beside you. Always.
+</p>
+</div>
+
+<!-- FOREVER -->
+<div class="slide">
+<h2>Forever 💍</h2>
+<p>
+Forever with you doesn’t mean perfection.  
+It means choosing each other every day.  
+It means laughing in chaos, holding hands in silence,  
+supporting each other through every storm.  
+I don’t just want moments with you —  
+I want a lifetime.  
+A lifetime of memories, of growth, of shared dreams.  
+You are my today, my tomorrow, and every future chapter I hope to write.
+</p>
+</div>
+
+<script>
+
+let slides=document.querySelectorAll(".slide");
+let current=0;
+let correctPassword="18072024";
+
+function login(){
+let pass=document.getElementById("password").value;
+if(pass===correctPassword){
+slides[0].classList.remove("active");
+slides[1].classList.add("active");
+document.getElementById("bgMusic").play();
+startHearts();
+startAutoSlide();
+}
+else{
+alert("Wrong Date ❤️");
+}
+}
+
+function startAutoSlide(){
+setInterval(()=>{
+slides[current].classList.remove("active");
+current++;
+if(current>=slides.length){current=slides.length-1;}
+slides[current].classList.add("active");
+},8000);
+}
+
+function startHearts(){
+setInterval(()=>{
+let heart=document.createElement("div");
+heart.innerHTML="❤️";
+heart.className="heart";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(Math.random()*20+15)+"px";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),6000);
+},600);
+}
+
+function showSecret(){
+document.getElementById("secret").style.display="block";
+}
+
+/* mouse sparkle */
+document.addEventListener("mousemove",e=>{
+let s=document.createElement("div");
+s.className="sparkle";
+s.style.left=e.clientX+"px";
+s.style.top=e.clientY+"px";
+document.body.appendChild(s);
+setTimeout(()=>s.remove(),800);
+});
+
+</script>
+
+</body>
+</html>
